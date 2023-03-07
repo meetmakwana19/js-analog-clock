@@ -1,0 +1,166 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1610534440162-e0e68fbdeca3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    height: 45rem;
+    width: 45rem;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    /* background-color: white; */
+    background-image: url("https://seeklogo.com/images/D/dr-strange-logo-8AE12158D3-seeklogo.com.png");
+    background-size: cover;
+    height: 35rem;
+    width: 35rem;
+    border: 2.3rem solid black;
+    border-radius: 50%;
+    /* padding: 2rem; */
+    box-shadow: 14px -5px 146px -35px rgba(255,255,255,1);
+    -webkit-box-shadow: 14px -5px 146px -35px rgba(255,255,255,1);
+    -moz-box-shadow: 14px -5px 146px -35px rgba(255,255,255,1);
+}
+.clock-face{
+    width: 100%;
+    height: 100%;
+    border: 1.3rem solid black;
+    border-radius: 50%;
+    text-align: center;
+    /* very imp */
+    position: relative;
+
+    background-color: white;
+    border: 0px ;
+}
+.clock-face::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: 20;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.clock-face::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    z-index: 20;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hand{
+    width: 50%;
+    height: 1rem;
+    background-color: black;
+    /* border: 2px solid rgba(255, 255, 255, 0.815); */
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    /* transform-origin: right; */
+    /* transition: all 0.3s; */
+    z-index: 10;
+}
+.hour-hand{
+    width: 38% !important;
+    translate: 32% -32% !important;
+    /* transform: rotate(90deg); */
+    z-index: 10;
+}
+#min-hand{
+    height: 0.5rem;
+    width: 44% !important;
+    translate: 14% 0;
+    /* background-color: green; */
+    z-index: 15;
+}
+#sec-hand{
+    height: 0.28rem;
+    width: 56%;
+    translate: 6% 0;
+    background-color: red ;
+    z-index: 30;
+    translate: 9% 0;
+    transform-origin: 80%;
+}
+.number{
+    --rotation: 0;
+    position: absolute;
+    font-size: xxx-large;
+    width: 100%;
+    height: 100%;
+    transform: rotate(var(--rotation));
+    color: black;
+}
+.number1{ --rotation: 30deg }
+.number2{ --rotation: 60deg }
+.number3{ --rotation: 90deg }
+.number4{ --rotation: 120deg }
+.number5{ --rotation: 150deg }
+.number6{ --rotation: 178deg }
+.number7{ --rotation: 208deg }
+.number8{ --rotation: 238deg }
+.number9{ --rotation: 268deg }
+.number10{ --rotation: 300deg }
+.number11{ --rotation: 330deg }
+
+.dial-circle{
+    transform: rotate(5deg);
+    translate: 5% 0;
+    scale: 1.65;
+}
+.diallines {
+    position: absolute;
+    z-index: 2;
+    width: 0.1rem;
+    height: 0.6rem;
+    background: black;
+    left: 50%;
+    margin-left: -1px;
+    transform-origin: 50% 150px;
+}
+.diallines:nth-of-type(5n) {
+    position: absolute;
+    z-index: 2;
+    width: 0.2rem;
+    height: 0.8rem;
+    background: black;
+    left: 50%;
+    margin-left: -1px;
+    transform-origin: 50% 150px;
+  }
+  
+.info {
+    position: absolute;
+    width: 8rem;
+    height: 1.4rem;
+    border-radius: 7px;
+    background: #ccc;
+    text-align: center;
+    line-height: 20px;
+    color: #000;
+    font-size: 1rem;
+    font-family: "Poiret One";
+    font-weight: 700;
+    z-index: 3;
+    letter-spacing: 0.2rem;
+    margin-left: -60px;
+    left: 50%;
+  }
+.date {
+      top: 8rem;
+    }
+.day {
+      top: 21rem;
+  }
