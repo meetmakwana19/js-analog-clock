@@ -172,13 +172,14 @@ body{
     margin-left: -60px;
     left: 50%;
   }
-.title{
+  .title{
     top: 8rem;
     font-size: 1.3rem;
 }
 .date {
+    font-size: 1.3rem;
       top: 14.8rem;
-      left: 68%;
+      left: 69%;
       border: 1px solid black;
       padding: 0;
       line-height: 1.6rem;
@@ -205,6 +206,6 @@ body{
     background-color: rgb(236, 235, 235);
     border-radius: 0;
     box-shadow: 2px 0px 5px 5px rgba(0,0,0,0.72) inset;
--webkit-box-shadow: 2px 0px 5px 5px rgba(0,0,0,0.72) inset;
--moz-box-shadow: 2px 0px 5px 5px rgba(0,0,0,0.72) inset;
+    -webkit-box-shadow: 2px 0px 5px 5px rgba(0,0,0,0.72) inset;
+    -moz-box-shadow: 2px 0px 5px 5px rgba(0,0,0,0.72) inset;
 }
